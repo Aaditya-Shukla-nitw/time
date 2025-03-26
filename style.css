@@ -1,4 +1,4 @@
-
+/* 
 body {
     display: flex;
     flex-direction: column;
@@ -31,6 +31,68 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
+} */
+:root {
+    --bg-color: #282c36;
+    --text-color: #ffffff;
+    --container-bg: rgba(255, 255, 255, 0.1);
+    --button-color: #4CAF50;
+}
+
+.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --container-bg: #f0f0f0;
+    --button-color: #007BFF;
+}
+
+.neon-theme {
+    --bg-color: #000000;
+    --text-color: #00FF00;
+    --container-bg: rgba(0, 255, 0, 0.2);
+    --button-color: #FF00FF;
+}
+#timerInput{
+    height: 20px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 3px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    padding: 20px;
+    background: var(--container-bg);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#datetime, #stopwatch, #timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: white;
 }
 .start { background-color: #4CAF50; color: white; }
 .stop { background-color: #f44336; color: white; }
