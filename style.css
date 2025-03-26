@@ -1,0 +1,37 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c36;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#datetime, #stopwatch, #timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.start { background-color: #4CAF50; color: white; }
+.stop { background-color: #f44336; color: white; }
+.reset { background-color: #008CBA; color: white; }

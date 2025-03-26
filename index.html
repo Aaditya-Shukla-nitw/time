@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Date, Time, Timer & Stopwatch</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Current Date & Time</h1>
+        <div id="datetime"></div>
+    </div>
+
+    <div class="container">
+        <h1>Stopwatch</h1>
+        <div id="stopwatch">00:00:00</div>
+        <button class="start" onclick="startStopwatch()">Start</button>
+        <button class="stop" onclick="stopStopwatch()">Stop</button>
+        <button class="reset" onclick="resetStopwatch()">Reset</button>
+    </div>
+
+    <div class="container">
+        <h1>Timer</h1>
+        <div id="timer">00:00:00</div>
+        <button class="start" onclick="startTimer()">Start</button>
+        <button class="stop" onclick="stopTimer()">Stop</button>
+        <button class="reset" onclick="resetTimer()">Reset</button>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
