@@ -18,16 +18,10 @@
     --container-bg: rgba(0, 255, 0, 0.2);
     --button-color: #FF00FF;
 }
-#timerInput{
-    height: 20px;
-    width: 200px;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 3px;
-}
+
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -35,18 +29,32 @@ body {
     color: var(--text-color);
     font-family: Arial, sans-serif;
     text-align: center;
+    transition: background-color 0.5s, color 0.5s;
 }
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.button-container button{
+    width: 150px;
+}
+
 .container {
     padding: 20px;
     background: var(--container-bg);
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     margin-bottom: 20px;
+    transition: background 0.5s;
 }
 h1 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
-#datetime, #stopwatch, #timer {
+#datetime, #stopwatch, #timer, #alarm {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -59,7 +67,26 @@ button {
     border-radius: 5px;
     background-color: var(--button-color);
     color: white;
+    transition: background-color 0.3s;
 }
-.start { background-color: #4CAF50; color: white; }
-.stop { background-color: #f44336; color: white; }
-.reset { background-color: #008CBA; color: white; }
+input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 10px;
+
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+.blinking {
+    animation: blink 1s infinite;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+.shaking {
+    animation: shake 0.5s infinite;
+}
